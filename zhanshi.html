@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scenic Spot Analysis</title>
+    <meta name="description" content="This page visualizes scenic spot analysis with various charts, including rating distribution and top spots.">
+    <meta name="author" content="Your Name">
+    <meta name="keywords" content="scenic spots, analysis, ratings, charts, review count">
+    <title>景点分析可视化</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,6 +21,20 @@
             padding: 1rem 0;
             text-align: center;
         }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .container {
             max-width: 1200px;
             margin: 2rem auto;
@@ -29,12 +46,13 @@
         }
         .image-section {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
             gap: 2rem;
+            flex-wrap: wrap;
         }
         img {
             max-width: 100%;
+            height: auto;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -46,28 +64,41 @@
             padding: 1rem 0;
             margin-top: 2rem;
         }
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Scenic Spot Analysis Visualization</h1>
+        <h1>景点分析可视化</h1>
     </header>
+    
+    <nav>
+        <a href="#rating-distribution">评分分布</a>
+        <a href="#review-relationship">评论与评分关系</a>
+        <a href="#top-10">排名前10的景点</a>
+    </nav>
+    
     <div class="container">
-        <h2>1. Scenic Rating Distribution</h2>
+        <h2 id="rating-distribution">1. 景点评分分布</h2>
         <div class="image-section">
-            <img src="/mnt/data/2e127d2501d97b4da6f918faa406cfd.png" alt="Scenic Rating Distribution">
+            <img src="https://raw.githubusercontent.com/tdzhs/zhanshi/main/2e127d2501d97b4da6f918faa406cfd.png" alt="景点评分分布">
         </div>
-        <h2>2. Relationship Between Review Count and Ratings</h2>
+        
+        <h2 id="review-relationship">2. 评论数量与评分关系</h2>
         <div class="image-section">
-            <img src="/mnt/data/5ec1a0f97d757ffb4efeac32e5463ff.png" alt="Review Count and Ratings Scatter Plot">
+            <img src="https://raw.githubusercontent.com/tdzhs/zhanshi/main/5ec1a0f97d757ffb4efeac32e5463ff.png" alt="评论数量与评分关系散点图">
         </div>
-        <h2>3. Top 10 Scenic Spots</h2>
+        
+        <h2 id="top-10">3. 排名前10的景点</h2>
         <div class="image-section">
-            <img src="/mnt/data/16ff4131213d650985b24ff7fb450de.png" alt="Top 10 Scenic Spots">
+            <img src="https://raw.githubusercontent.com/tdzhs/zhanshi/main/16ff4131213d650985b24ff7fb450de.png" alt="排名前10的景点">
         </div>
     </div>
+    
     <footer>
-        <p>&copy; 2025 Scenic Spot Analysis. All Rights Reserved.</p>
+        <p>&copy; 2025 景点分析. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
